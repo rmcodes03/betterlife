@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".AddCommentActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/commentRecyclerView">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.hendraanggrian.appcompat.widget.SocialEditText
+        android:id="@+id/commentEditText"
+        android:hint="Comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        app:hashtagColor="@color/design_default_color_secondary"
+        app:socialFlags="hashtag|mention"
+        android:layout_above="@id/addCommentButton">
+    </com.hendraanggrian.appcompat.widget.SocialEditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Comment"
+        android:id="@+id/addCommentButton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+    </Button>
+</RelativeLayout>

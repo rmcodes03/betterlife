@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:paddingHorizontal="3dp"
+    android:paddingVertical="3dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cardview_default_elevation"
+        android:id="@+id/galleryCardView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/galleryProfile_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/user">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="2dp"
+                android:text="Username"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold">
+            </TextView>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/delete"
+                android:layout_alignParentRight="true"
+                android:id="@+id/deleteImageView">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:text="Date"
+                android:textSize="14dp"
+                android:textStyle="normal">
+            </TextView>
+
+            <com.hendraanggrian.appcompat.widget.SocialTextView
+                android:id="@+id/caption_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Caption"
+                android:layout_below="@id/galleryProfile_iv"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="16dp">
+            </com.hendraanggrian.appcompat.widget.SocialTextView>
+
+            <ImageView
+                android:id="@+id/posts_iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/caption_tv"
+                android:src="@drawable/picture">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/like_iv"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/posts_iv"
+                android:src="@drawable/like">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/noOfLikes_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/posts_iv"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:text="0 like"
+                android:textSize="14dp">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/comment_iv"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/posts_iv"
+                android:layout_marginLeft="45dp"
+                android:src="@drawable/comment">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/noOfComments_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/noOfLikes_tv"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dp"
+                android:text="0 comment"
+                android:textSize="14dp">
+            </TextView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

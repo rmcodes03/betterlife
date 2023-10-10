@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/noticeCardView"
+        android:layout_margin="@dimen/cardview_compat_inset_shadow"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/noticeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Something written here"
+                android:textSize="18dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
+
+            <TextView
+                android:id="@+id/writerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/noticeTextView"
+                android:layout_alignParentLeft="true"
+                android:text="Publisher"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="14dp"></TextView>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/share"
+                android:id="@+id/shareImageView"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/noticeTextView">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/writerTextView"
+                android:layout_alignParentLeft="true"
+                android:text="Date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textSize="14dp">
+            </TextView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

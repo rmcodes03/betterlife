@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/betterlifelogo"></ImageView>
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:text="Better Life is a platform that provides safe and effective medicines to the people who have no access to medicines. Better Life tries to reach out more and more underprivileged and the ones who cannot afford the high-cost and expensive medicines and medicinal needs. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/instalogo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/about"
+                android:padding="5dp"
+                android:src="@drawable/instagram"></ImageView>
+
+            <ImageView
+                android:id="@+id/twitterlogo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/about"
+                android:padding="5dp"
+                android:src="@drawable/twitter"></ImageView>
+
+            <ImageView
+                android:id="@+id/facebooklogo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/about"
+                android:padding="5dp"
+                android:src="@drawable/facebook"></ImageView>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
